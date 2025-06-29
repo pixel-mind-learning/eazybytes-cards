@@ -4,7 +4,9 @@ import com.eazybytes.cards.dto.CardsContactInfoDto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+@EnableDiscoveryClient
 @SpringBootApplication
 @EnableConfigurationProperties(value = {CardsContactInfoDto.class})
 public class CardsApplication {
